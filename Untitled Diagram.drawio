@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-12-31T07:15:48.595Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="TQrVvChuVEkDzvQ33Mos" version="14.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-31T07:16:16.186Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="YAlI1_fKRxMUVr00IjeH" version="14.1.4" type="github">
   <diagram id="33QEFIJn6_i3KN9QWqTX" name="Page-1">
     <mxGraphModel dx="868" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="vgbddXEeYxFaoDYG-rwV-1" value="盘点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="300" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="300" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vgbddXEeYxFaoDYG-rwV-2" value="补货" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="190" width="120" height="60" as="geometry" />
