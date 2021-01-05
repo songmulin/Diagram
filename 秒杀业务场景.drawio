@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-05T03:15:52.324Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="xp1LDcABNWg0oOtJSTQq" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-05T07:31:49.507Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="QRCrmKW0eTJokctVUPNx" version="14.1.8" type="github">
   <diagram id="sVyu8kEUusBLISPdritq" name="Page-1">
     <mxGraphModel dx="1117" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -150,8 +150,11 @@
         <mxCell id="qWQ2prd4X41mVH_ZmRbq-50" value="校验恶意请求" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout" vertex="1" parent="1">
           <mxGeometry x="445" y="180" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qWQ2prd4X41mVH_ZmRbq-51" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="130" width="50" height="100" as="geometry" />
+        <mxCell id="qWQ2prd4X41mVH_ZmRbq-51" value="1.前端button点击后致灰几秒&lt;br&gt;2.静态文件，模板页面放入CDN，减少请求落到后端服务&lt;br&gt;3.Nginx负载均衡，分摊请求流量到不同机器&lt;br&gt;4.服务单一职责，库和服务跟正常业务分开，不影响正常业务流程，强行高可用&lt;br&gt;5.防止截取URL，恶意攻击，针对url进行加密，可用urlEncode，decode&lt;br&gt;6.限流，顶不住挡一部分流量出去，也就是降级&lt;br&gt;7.熔断，A-&amp;gt;B-&amp;gt;C,当C系统不行了，对C进行熔断，保证A B不被影响&lt;br&gt;8.隔离，多系统之间独立，不被影响，自身不行，不拖垮调用方系统&lt;br&gt;9.库存预热，提前把商品库存加载redis&lt;br&gt;10.削峰填谷，利用MQ异步化流程，单次请求快速响应" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="110" width="50" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qWQ2prd4X41mVH_ZmRbq-52" value="限流：&lt;br&gt;1.漏桶算法，限制容量池大小，防止流量暴增&lt;br&gt;2.令牌桶算法，需要先从桶里获取令牌，请求才能被处理，否则拒绝&lt;br&gt;3.自定义注解+拦截器+redis，key = ip+url , value = 请求次数+1，设置过期时间(多少秒能访问几次)&lt;br&gt;4.Guava的RateLimiter" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="330" width="50" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
