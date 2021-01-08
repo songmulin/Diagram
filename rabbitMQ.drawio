@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-01-08T08:54:42.743Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="huvFCOb6ofsYwpoHriuV" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-08T09:05:32.270Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="rEvkVLPnTK6rGckejm6D" version="14.1.8" type="github">
   <diagram id="YkF_xr2YK-9CTUuaJ1Um" name="Page-1">
     <mxGraphModel dx="920" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="eu5U1hnf9LweZi0uD29D-2" value="集群模式：&lt;br&gt;镜像模式，元数据和queue的消息存在多个实例上，写入消息时，多个实例里面queue消息需要进行同步" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="230" width="50" height="100" as="geometry" />
+          <mxGeometry x="50" y="1270" width="50" height="100" as="geometry" />
         </mxCell>
         <mxCell id="eu5U1hnf9LweZi0uD29D-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.015;entryY=0.206;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eu5U1hnf9LweZi0uD29D-5" target="eu5U1hnf9LweZi0uD29D-9">
           <mxGeometry relative="1" as="geometry" />
@@ -119,6 +119,9 @@
         </mxCell>
         <mxCell id="eu5U1hnf9LweZi0uD29D-45" value="Exchange:&lt;br&gt;1.接收生产者发送的消息&lt;br&gt;2.如何处理消息？递交给某个队列，所有队列，还是丢弃，取决exchange类型&lt;br&gt;类型：&lt;br&gt;fanout:广播，将消息交给所有绑定到交换机的队列&lt;br&gt;direct:定向，把消息交给符合指定routing key的队列(精确匹配)&lt;br&gt;topic:通配符，把消息交给符合routing pattern（路由模式）的队列（模糊匹配）&lt;br&gt;header:" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
           <mxGeometry x="49" y="970" width="51" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eu5U1hnf9LweZi0uD29D-46" value="消息丢失场景&lt;br&gt;1.生产者发送到exchange: 采用事物或者confirm模式&lt;br&gt;2.消费方消费到消息丢失：采用手动ACK机制&lt;br&gt;3.发送到MQ时宕机了：可以将消息进行持久化（写入磁盘），前提 exchange queue也需要持久化" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1140" width="45" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
