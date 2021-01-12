@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-12T09:31:42.809Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="UsZseqyytC-7hGKOBcqy" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-12T09:36:38.562Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="MT3FQCIdXrA-V6zUAQNg" version="14.1.9" type="github">
   <diagram id="-2vOlbCm5UK6GnXF7qmE" name="Page-1">
     <mxGraphModel dx="652" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -95,6 +95,9 @@
         </mxCell>
         <mxCell id="gHSD-VTmvuO6psi_np3N-3" value="保证循序性？&lt;br&gt;利用内存队列，最好是能够合并请求，解决系统引入循序性的保证" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
           <mxGeometry x="355" y="470" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gHSD-VTmvuO6psi_np3N-6" value="如何设计一个dubbo的rpc框架？&lt;br&gt;1.首先得有个注册中心，ZK&lt;br&gt;2.消费者得去注册中心拿对应的服务信息，每个服务在不同的机器&lt;br&gt;3.发请求，咋发？基于动态代理，面向接口获取到一个动态代理（netty）&lt;br&gt;4.通过负载均衡，请求应该发到哪个机器。&lt;br&gt;5.发送什么格式数据？使用hessian协议" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="630" width="50" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
