@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-01-12T08:39:18.259Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="dyGqp9T2RmlpP6RHMTaz" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-12T09:07:02.562Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="eYredyQ5eIwoq8Whhu3R" version="14.1.9" type="github">
   <diagram id="-2vOlbCm5UK6GnXF7qmE" name="Page-1">
-    <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="652" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -89,6 +89,9 @@
         </mxCell>
         <mxCell id="gHSD-VTmvuO6psi_np3N-1" value="协议：&lt;br&gt;dubbo协议，采用hessian序列化协议，基于NIO采用TCP长连接，适用传输数据量小，高并发&lt;br&gt;rmi&lt;br&gt;hessian&lt;br&gt;http&lt;br&gt;webservice" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
           <mxGeometry x="770" y="610" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gHSD-VTmvuO6psi_np3N-2" value="dubbo动态代理策略&lt;br&gt;1.默认适用javassist动态字节码生成，创建代理类&lt;br&gt;2.通过SPI扩展机制配置自己的动态策略&lt;br&gt;一个接口多个实现，系统运行的时候该选择哪个实现类？&lt;br&gt;插件扩展场景，当某个项目想用别人的一个功能，可以让实现插件或者jar依赖进来，扩展这个功能&lt;br&gt;举例：jdbc，我们需要根据自己使用的数据库，引入不同的jar，oracle 还是mysql&lt;br&gt;dubbo自己实现spi的机制&lt;br&gt;&lt;pre style=&quot;box-sizing: border-box ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 13.6px ; margin-top: 0px ; margin-bottom: 0px ; overflow-wrap: normal ; padding: 16px ; overflow: auto ; line-height: 1.45 ; border-radius: 6px ; word-break: normal ; color: rgb(36 , 41 , 46)&quot;&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box&quot;&gt;Protocol&lt;/span&gt; protocol &lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box&quot;&gt;ExtensionLoader&lt;/span&gt;&lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box&quot;&gt;.&lt;/span&gt;getExtensionLoader(&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box&quot;&gt;Protocol&lt;/span&gt;&lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box&quot;&gt;.&lt;/span&gt;class)&lt;span class=&quot;pl-k&quot; style=&quot;box-sizing: border-box&quot;&gt;.&lt;/span&gt;getAdaptiveExtension();&lt;/pre&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="750" width="60" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
