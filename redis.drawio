@@ -1,12 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2021-01-14T02:43:10.193Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="zXn-hog9ysB0PXKUeJsm" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-14T03:16:40.461Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="j92P1_fYWvd2yqn04Bys" version="14.1.9" type="github">
   <diagram id="kpl2dcWsY0xD0GeVpO5R" name="Page-1">
     <mxGraphModel dx="1117" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="efk5Vp5pkJLRVK2lP7jx-1" value="redis 分布式锁" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="110" y="70" width="110" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="efk5Vp5pkJLRVK2lP7jx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-2" target="efk5Vp5pkJLRVK2lP7jx-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -87,6 +84,9 @@
         </mxCell>
         <mxCell id="efk5Vp5pkJLRVK2lP7jx-25" value="&lt;br&gt;hincrby myLock 123abc 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-31" value="redis分布式锁：&lt;br&gt;会存在多个客户端同时完成加锁&lt;br&gt;客户端A在在master完成了加锁，这时候master节点挂掉，还没来得及同步给slave，slave变成master&lt;br&gt;这时客户端B也能在master上获取到这把锁" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="50" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
