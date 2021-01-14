@@ -1,1 +1,94 @@
-<mxfile host="app.diagrams.net" modified="2021-01-14T02:00:40.884Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" version="14.1.9" etag="9GKvjWjVhes7aESwXZ9_" type="github"><diagram id="kpl2dcWsY0xD0GeVpO5R">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-14T02:43:10.193Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="zXn-hog9ysB0PXKUeJsm" version="14.1.9" type="github">
+  <diagram id="kpl2dcWsY0xD0GeVpO5R" name="Page-1">
+    <mxGraphModel dx="1117" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-1" value="redis 分布式锁" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="70" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-2" target="efk5Vp5pkJLRVK2lP7jx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-2" value="客户端" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-3" target="efk5Vp5pkJLRVK2lP7jx-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-9" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="efk5Vp5pkJLRVK2lP7jx-5">
+          <mxGeometry x="-0.1145" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-3" target="efk5Vp5pkJLRVK2lP7jx-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-7" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="efk5Vp5pkJLRVK2lP7jx-6">
+          <mxGeometry x="-0.1545" y="-3" relative="1" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-3" value="key是否存在&lt;br&gt;exists myLock" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="220" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-10" target="efk5Vp5pkJLRVK2lP7jx-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-10" value="执行hset命令&lt;br&gt;hset myLock 123abc 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-11" target="efk5Vp5pkJLRVK2lP7jx-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-11" value="执行pexpire 命令&lt;br&gt;pexpire myLock 10000" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-13" target="efk5Vp5pkJLRVK2lP7jx-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-15" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="efk5Vp5pkJLRVK2lP7jx-14">
+          <mxGeometry x="-0.2242" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-27" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-13" target="efk5Vp5pkJLRVK2lP7jx-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-13" value="hexists key field&lt;br&gt;hexists myLock 123abc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-16" target="efk5Vp5pkJLRVK2lP7jx-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-16" value="pptl key&lt;br&gt;key的剩余过期时间&lt;br&gt;PPTL myLock" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-17" value="获取锁失败" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-19" target="efk5Vp5pkJLRVK2lP7jx-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-19" value="执行pexpire 命令&lt;br&gt;pexpire myLock 10000" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-22" value="获取锁成功" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="efk5Vp5pkJLRVK2lP7jx-25" target="efk5Vp5pkJLRVK2lP7jx-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="efk5Vp5pkJLRVK2lP7jx-25" value="&lt;br&gt;hincrby myLock 123abc 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
