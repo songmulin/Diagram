@@ -1,1 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2021-05-24T06:51:27.855Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" version="14.7.0" etag="3pJW05JGqdGJLsSS5AGX" type="github"><diagram id="T5jLNx3cUzOp_GnyQVxL">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-24T07:25:28.102Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="ihCW9G1zEu_6yF2kvA-Q" version="14.7.0" type="github">
+  <diagram id="T5jLNx3cUzOp_GnyQVxL" name="Page-1">
+    <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vqXSTIQL8JVGSJbUUD6O-2" value="&lt;h1&gt;自我介绍&lt;/h1&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;我叫宋木林，10年毕业于广播电视大学软件工程专业&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;曾先后任职于波导信息、外企德科、都市菜园、我厨科技、米立这几家公司&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;主要担任java研发岗位&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;前三年做SP业务项目，这期间是技术和业务的学习期，从什么都不懂到公司项目落地上线。&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;16年进入互联网行业，开始接触微服务方面的技术，是自己技术成长最快的时刻，&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;其中生鲜电商项目运用搜索引擎技术给用户带来了很好的体验，并得到了领导的认可。&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;17年进入无人零售这个行业，针对办公室场景做无人货架和无人货柜项目，给用户呈现了非一般购物场景。&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;平时喜欢关注一些技术公众号，利用零散的时间看一些技术文章，晚上空余时间会看一些在线学习平台的公开课&lt;/div&gt;&lt;div style=&quot;line-height: 1.75 ; font-size: 14px&quot;&gt;非常感谢贵公司给予java高级开发岗位的面试机会。&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="520" height="420" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
