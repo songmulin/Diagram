@@ -14,13 +14,13 @@
           <mxGeometry x="309" y="154" width="83" height="56" as="geometry" />
         </mxCell>
         <mxCell id="v2oY_wWWvYNtSlGIq01c-6" value="密码" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="439" y="154" width="83" height="56" as="geometry" />
+          <mxGeometry x="456" y="165" width="83" height="56" as="geometry" />
         </mxCell>
         <mxCell id="v2oY_wWWvYNtSlGIq01c-7" value="手机号" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="576" y="204" width="83" height="56" as="geometry" />
         </mxCell>
         <mxCell id="v2oY_wWWvYNtSlGIq01c-8" value="地址" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="615" y="294" width="83" height="56" as="geometry" />
+          <mxGeometry x="647" y="293" width="83" height="56" as="geometry" />
         </mxCell>
         <mxCell id="v2oY_wWWvYNtSlGIq01c-9" value="邮箱" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="99" y="284" width="83" height="56" as="geometry" />
